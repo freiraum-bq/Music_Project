@@ -1,0 +1,21 @@
+neo4j_artists.csv
+   ├─ artist_id  ←───────────── originals.org_art_id     (artist created OG music)
+   │                    └────── covers.cov_art_id        (artist covered music)
+   │                    └────── releases.artist_id       (artist released music (OG & covers))
+   └─ (also referenced inside the SAME file via member_of)
+
+originals.csv
+   ├─ perf_id   ←──────── covers.org_perf_id      (OG song & its ID)
+   │              └────── releases.perf_ids       (A)
+   └─ release_id ───────→ releases.release_id     ()
+
+covers.csv
+   ├─ perf_id                                     (stand-alone ID for the cover itself)
+   ├─ cov_art_id ─────→ neo4j_artists.artist_id   (who covered)
+   └─ org_perf_id ────→ originals.perf_id         (what they covered)
+
+releases.csv
+   ├─ release_id                                            (Song)
+   ├─ artist_id ─────→ neo4j_artists.artist_id              (credited act)
+   └─ perf_ids ───────→ originals.perf_id | covers.perf_id  ()
+
