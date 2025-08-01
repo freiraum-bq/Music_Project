@@ -67,6 +67,7 @@ print(f"Found {len(missing_ids)} member_of IDs not in artist_id:\n", missing_ids
 
 # %% 3.A.1 check for references to missing member_of IDs
 # -- 3.A.1 check for references to missing member_of IDs
+# --------------- member_of ➜ artist_id ----------------
 
 for missing in missing_ids:
     refs = df_art[df_art['member_of'].str.contains(fr'\b{missing}\b', na=False)]
@@ -76,6 +77,7 @@ for missing in missing_ids:
 
 # %% 3.B check for orphan orgiginal performance IDs in covers.csv & originals.csv
 # -- 3.B check for orphan orgiginal performance IDs in covers.csv & originals.csv
+# ----------------- covers.org_perf_id ➜ originals.perf_id ----------------------
 
 cov_org_ids = set(df_cov['org_perf_id'].astype(int))
 orig_perf_ids = set(df_orig['perf_id'].astype(int))
@@ -91,6 +93,7 @@ print(f"Found {len(missing_cov_org)} org_perf_id [covers.csv] not in perf_id [or
 
 # %% 3.C check for orphan orgiginal artist IDs
 # -- 3.C check for orphan orgiginal artist IDs
+# ----- originals.org_art_id ➜ artist_id -----
 
 orig_art_series = (
     df_orig['org_art_id']
@@ -109,7 +112,7 @@ print(f"Found {len(missing_orig_art)} org_art_id [originals.csv] not in artist_i
 
 # org_art_id in originals.csv should match artist_id in neo4j_artists.csv
 # Interpretation:
-# 238 distinct original-artist IDs for which you have no corresponding artist record;
+# 238 distinct original-artist IDs for which we have no corresponding artist record;
 # for those 238 IDs we have a song release but no metadata
 # ────────────────────────────────────────────────────────────────
 
@@ -140,6 +143,7 @@ print(missing_orig_df.to_string(index=False))
 
 # %% 3.D check for orphan release artist IDs in releases.csv
 # -- 3.D check for orphan release artist IDs in releases.csv
+# ------------ releases.artist_id ➜ artist_id --------------
 
 rel_art_series = (
     df_rel['artist_id']
@@ -157,6 +161,7 @@ print(f"Found {len(missing_rel_art)} artist_id [releases.csv] not in artist_id [
 
 # releases.artist_id should match artists.artist_id
 # Interpretation if we find any mismatch:
+# we have release entries that reference artists not in our master artist list.
 # ────────────────────────────────────────────────────────────────
 
 # %% 3.D.1 Inspect missing release-artist IDs
@@ -187,6 +192,7 @@ print(missing_rel_df.to_string(index=False))
 
 # %% 3.E check for orphan cover performance IDs in releases.csv
 # -- 3.E check for orphan cover performance IDs in releases.csv
+# ------------- covers.perf_id ➜ releases.perf_ids ------------
 
 perf_ids_series = (
     df_rel['perf_ids']
