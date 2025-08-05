@@ -1,21 +1,602 @@
 Original Genre,Mapped Genre
 glitch,Electronic/Dance
 latin metal,Rock
-musical theater,World/Other
+musical theater,Pop
 ambient,Electronic/Dance
 adult contemporary,Pop
 non-fiction books,World/Other
 filmi,World/Other
 synth-rock,Rock
-tape,World/Other
+tape,Electronic/Dance
 electro,Electronic/Dance
 christian alternative rock,Rock
 jazz fusion,Jazz/Blues
 avant-funk,Jazz/Blues
 downtempo,Electronic/Dance
-comedy metal,World/Other
-midwestern hip hop,World/Other
-instrumental rock,World/Other
-post-progressive,World/Other
-madchester,World/Other
+comedy metal,Rock
+midwestern hip hop,Hip-Hop/Rap
+instrumental rock,Rock
+post-progressive,Rock
+madchester,Rock
 short stories,World/Other
+chicago soul,Jazz/Blues
+synthpop,Electronic/Dance
+crossover thrash,Rock
+neoclassical metal,Rock
+slowcore,Rock
+modern chanson,Pop
+gospel reggae,World/Other
+electropop,Electronic/Dance
+bedroom pop,Pop
+dark wave,Electronic/Dance
+alternative metal,Rock
+afropop,World/Other
+boogie-woogie,Jazz/Blues
+lako,World/Other
+hip hop,Hip-Hop/Rap
+ballad,Pop
+electro-rock,Rock
+nu-funk,Jazz/Blues
+ballads,Pop
+ethnopop,World/Other
+theatre,Pop
+emo-pop,Pop
+progressive rap,Hip-Hop/Rap
+post-bop,Jazz/Blues
+piedmont blues,Jazz/Blues
+grebo,Rock
+tropiclia,World/Other
+folk music,World/Other
+beat,Electronic/Dance
+dream pop,Rock
+polka,World/Other
+britfunk,Jazz/Blues
+later years,World/Other
+midwestern hip-hop,Hip-Hop/Rap
+science fiction,World/Other
+arena rock,Rock
+gospel music,World/Other
+stride,Jazz/Blues
+alternative rock,Rock
+light orchestral,Classical
+merseybeat,Rock
+experimental pop,Pop
+comedy pop,Pop
+bolero,World/Other
+classical music,Classical
+hawaiian,World/Other
+vocal trance,Electronic/Dance
+ambient techno,Electronic/Dance
+classic rock revival,Rock
+modern jazz,Jazz/Blues
+indie soul,Jazz/Blues
+world,World/Other
+guaracha,World/Other
+tuvan throat singing,World/Other
+psychedelic soul,Jazz/Blues
+melodic hardcore,Rock
+blue-eyed soul,Jazz/Blues
+french rock,Rock
+uk garage,Electronic/Dance
+zydeco,World/Other
+gothic metal,Rock
+space rock,Rock
+parody music,Pop
+new prog,Rock
+australiana,World/Other
+short story writer,World/Other
+country music,World/Other
+a cappella,Pop
+euro disco,Electronic/Dance
+twang,World/Other
+anison,World/Other
+south african jazz,Jazz/Blues
+expressionist,World/Other
+indie-pop,Pop
+political hip hop,Hip-Hop/Rap
+sound-alike,Pop
+soul music,Jazz/Blues
+hardcore punk,Rock
+blues punk,Rock
+art punk,Rock
+hardcore rap,Hip-Hop/Rap
+outlaw country,World/Other
+west coast hip hop,Hip-Hop/Rap
+metalcore,Rock
+operatic pop,Pop
+prog rock,Rock
+jam rock,Rock
+neo-prog,Rock
+progressive house,Electronic/Dance
+hardcore techno,Electronic/Dance
+indie,Pop
+musicals,Pop
+british dance band,World/Other
+pop music,Pop
+progressive folk,World/Other
+groove jazz,Jazz/Blues
+technical death metal,Rock
+klezmer,World/Other
+country,World/Other
+folk-blues,World/Other
+raga rock,World/Other
+old school hip hop,Hip-Hop/Rap
+stadium house,Electronic/Dance
+electro-pop,Electronic/Dance
+southern gospel,World/Other
+popular,Pop
+italian folk,World/Other
+novelty songs,Pop
+author,World/Other
+german hip hop,Hip-Hop/Rap
+appalachian,World/Other
+eurodance,Electronic/Dance
+alt country,World/Other
+word play,World/Other
+astral jazz,Jazz/Blues
+outsider,World/Other
+trip hop,Electronic/Dance
+proto-prog,Rock
+canterbury scene,Rock
+ska punk,Rock
+memphis blues,Jazz/Blues
+latin alternative,World/Other
+psychedelic folk,World/Other
+power ballad,Pop
+urban blues,Jazz/Blues
+western swing,World/Other
+afrobeat,World/Other
+k-pop,Pop
+synthwave,Electronic/Dance
+childrens songs,Pop
+rb,Jazz/Blues
+christian punk,Rock
+countrypopular,Pop
+entehno,World/Other
+alternative dance,Electronic/Dance
+acoustic rock,Rock
+french variety songs,Pop
+country rock,World/Other
+folk,World/Other
+jenkka,World/Other
+islamic,World/Other
+brumbeat,Rock
+broadway theatre musicals,Pop
+mafioso rap,Hip-Hop/Rap
+first-wave black metal,Rock
+varits,World/Other
+contemporary classical music,Classical
+medieval metal,Rock
+electronicore,Rock
+2-step garage,Electronic/Dance
+west coast hip-hop,Hip-Hop/Rap
+garage rock,Rock
+folk metal,Rock
+wave,Electronic/Dance
+emo pop,Pop
+swedish pop,Pop
+hard rock,Rock
+death metal,Rock
+easycore,Rock
+uk funky,Electronic/Dance
+character comedy,Pop
+neapolitan song,World/Other
+swamp pop,World/Other
+rockabilly,Rock
+progressive rock,Rock
+reggae rock,Rock
+punk,Rock
+east coast blues,Jazz/Blues
+midwest emo,Rock
+sambalano,World/Other
+neue deutsche welle,Rock
+english folk music,World/Other
+pop covers,Pop
+glam punk,Rock
+progressive pop,Pop
+avant-garde jazz,Jazz/Blues
+nu jazz,Jazz/Blues
+acoustic music,Pop
+gospel blues,Jazz/Blues
+future bass,Electronic/Dance
+new-age,Electronic/Dance
+gothabilly,Rock
+isicathamiya,World/Other
+instrumental hip hop,Hip-Hop/Rap
+post-rock,Rock
+frat rock,Rock
+german folk,World/Other
+italo disco,Electronic/Dance
+jazz poetry,Jazz/Blues
+neue volksmusik,World/Other
+vaudeville,World/Other
+indie dance,Electronic/Dance
+british soul,Jazz/Blues
+drill n bass,Electronic/Dance
+garage pop,Pop
+performance art,World/Other
+japanese pop,Pop
+post-disco,Electronic/Dance
+british skiffle,World/Other
+go-go,Hip-Hop/Rap
+riot grrrl,Rock
+pop metal,Rock
+pop soul,Jazz/Blues
+poetry,World/Other
+kayokyoku,World/Other
+ska-jazz,Jazz/Blues
+avant-rock,Rock
+microtonal,World/Other
+illbient,Electronic/Dance
+electro house,Electronic/Dance
+chamber music,Classical
+electronic dance music,Electronic/Dance
+honky-tonk,World/Other
+urban contemporary,Pop
+ntekhno,Electronic/Dance
+chicago blues,Jazz/Blues
+american primitive guitar,World/Other
+adult alternative,Pop
+world music,World/Other
+chicano rock,Rock
+show tune,Pop
+electronic music,Electronic/Dance
+futurepop,Electronic/Dance
+country-soul,World/Other
+synth pop,Electronic/Dance
+pop-rap,Hip-Hop/Rap
+bitpop,Electronic/Dance
+rave,Electronic/Dance
+east coast hip hop,Hip-Hop/Rap
+soundtrack,World/Other
+jazz,Jazz/Blues
+jangle pop,Pop
+deutschpunk,Rock
+aor,Rock
+wind band,World/Other
+french popular music,Pop
+americana,World/Other
+philly soul,Jazz/Blues
+krautrock,Rock
+symphonic black metal,Rock
+video game score,World/Other
+avant-garde,World/Other
+enka,World/Other
+score,World/Other
+brazilian rock,Rock
+progressive metal,Rock
+rocksteady,World/Other
+black metal,Rock
+christian rock,Rock
+progressive country,World/Other
+stoner metal,Rock
+western films,World/Other
+abstract,World/Other
+easy listening,Pop
+rap,Hip-Hop/Rap
+bubblegum pop,Pop
+dubstep,Electronic/Dance
+american rock,Rock
+post-industrial,Electronic/Dance
+wonky,Electronic/Dance
+geek rock,Rock
+zulu,World/Other
+powerviolence,Rock
+blues revival,Jazz/Blues
+kaykyoku,World/Other
+dark ambient,Electronic/Dance
+cowboy music,World/Other
+contemporary christian,World/Other
+folk rock,World/Other
+fantasia,World/Other
+synth-pop,Electronic/Dance
+college rock,Rock
+synthpunk,Electronic/Dance
+avant-folk,World/Other
+progressive jazz,Jazz/Blues
+sophisti-pop,Pop
+film score,World/Other
+new orleans r&b,Jazz/Blues
+schlager,Pop
+anti-folk,World/Other
+vocal pop,Pop
+german hip-hop,Hip-Hop/Rap
+childrens music,Pop
+psychedelic rap,Hip-Hop/Rap
+romani,World/Other
+acid jazz,Jazz/Blues
+marabi,World/Other
+experimental,World/Other
+trova,World/Other
+hip hop soul,Hip-Hop/Rap
+sketch comedy,World/Other
+cueca,World/Other
+hip house,Hip-Hop/Rap
+progressive r&b,Jazz/Blues
+maskanda,World/Other
+soul,Jazz/Blues
+boogie woogie,Jazz/Blues
+reggaeton,Hip-Hop/Rap
+technical thrash metal,Rock
+post-metal,Rock
+country blues,Jazz/Blues
+chamber rock,Rock
+doo wop,Jazz/Blues
+broken beat,Jazz/Blues
+art pop,Pop
+tropical house,Electronic/Dance
+pachanga,World/Other
+soul-blues,Jazz/Blues
+english pop,Pop
+rock glam metal lounge,Rock
+cantopop,World/Other
+synth-punk,Electronic/Dance
+dance-rock,Rock
+breakbeat hardcore,Electronic/Dance
+lyricist,World/Other
+surf rock,Rock
+electronica,Electronic/Dance
+collegiate a cappella,Pop
+street punk,Rock
+hardcore hip hop,Hip-Hop/Rap
+neotraditional country,World/Other
+jazz funk,Jazz/Blues
+new jack swing,Hip-Hop/Rap
+mugham,World/Other
+township,World/Other
+psychedelic,Rock
+tejanotex-mex,World/Other
+jazz-pop,Jazz/Blues
+musique concrte,Classical
+jungle,Hip-Hop/Rap
+shock rock,Rock
+alternative pop,Pop
+swing,Jazz/Blues
+msica popular brasileira,World/Other
+garage punk,Rock
+blackened death metal,Rock
+new,World/Other
+post-grunge,Rock
+saxophone,Jazz/Blues
+contemporary christian music,World/Other
+acid house,Electronic/Dance
+ethnic electronica,Electronic/Dance
+levenslied,World/Other
+drill and bass,Electronic/Dance
+psychedelic funk,Jazz/Blues
+dub,World/Other
+traditional popular music,World/Other
+p-funk,Jazz/Blues
+pop rap,Hip-Hop/Rap
+canzone napoletana,World/Other
+spoken word,World/Other
+dance punk,Rock
+pop punk,Rock
+jazz rap,Hip-Hop/Rap
+space disco,Electronic/Dance
+turkish folk,World/Other
+downtempo electronica,Electronic/Dance
+soul jazz,Jazz/Blues
+funk metal,Rock
+punk rock,Rock
+new wave pop,Pop
+urban cowboy,World/Other
+kuduro,World/Other
+ragtime,Jazz/Blues
+contemporary jazz,Jazz/Blues
+chiptune,Electronic/Dance
+classical crossover,Classical
+ska,Jazz/Blues
+psychedelic rock,Rock
+comedy rock,Rock
+modern blues,Jazz/Blues
+metal,Rock
+beat music,Electronic/Dance
+pop soul,Jazz/Blues
+alternative dance,Electronic/Dance
+indie folk,World/Other
+vocal jazz,Jazz/Blues
+punk pop,Rock
+garage rock revival,Rock
+future garage,Electronic/Dance
+pop rock,Pop
+early music,Classical
+medieval music,Classical
+celtic folk,World/Other
+irish folk,World/Other
+irish traditional,World/Other
+heavy metal,Rock
+jazz blues,Jazz/Blues
+indie rock,Rock
+canadian folk,World/Other
+female vocalists,Pop
+black metal,Rock
+experimental rock,Rock
+baroque music,Classical
+indie pop,Pop
+neo soul,Jazz/Blues
+christian metal,Rock
+smooth jazz,Jazz/Blues
+dancehall,Hip-Hop/Rap
+bluegrass,World/Other
+folk punk,World/Other
+dance pop,Pop
+dream pop,Rock
+folktronica,World/Other
+industrial rock,Rock
+rhythm and blues,Jazz/Blues
+neo soul,Jazz/Blues
+experimental hip hop,Hip-Hop/Rap
+electronicore,Rock
+psychobilly,Rock
+vaporwave,Electronic/Dance
+industrial metal,Rock
+indie rock,Rock
+country pop,World/Other
+trap,Hip-Hop/Rap
+acoustic pop,Pop
+british invasion,Rock
+roots reggae,World/Other
+indie electronic,Electronic/Dance
+power pop,Pop
+noise rock,Rock
+metalcore,Rock
+modern classical,Classical
+country rock,World/Other
+folktronica,World/Other
+melodic death metal,Rock
+pop punk,Rock
+britpop,Rock
+post hardcore,Rock
+indie pop,Pop
+drum and bass,Electronic/Dance
+reggae,World/Other
+deep house,Electronic/Dance
+ska punk,Rock
+rock and roll,Rock
+blues rock,Jazz/Blues
+country,World/Other
+funk,Jazz/Blues
+glam rock,Rock
+classic rock,Rock
+british folk,World/Other
+trap music,Hip-Hop/Rap
+vocal jazz,Jazz/Blues
+acid jazz,Jazz/Blues
+industrial,Rock
+punk rock,Rock
+nu metal,Rock
+glitch hop,Electronic/Dance
+acoustic,Pop
+future garage,Electronic/Dance
+dubstep,Electronic/Dance
+rap rock,Hip-Hop/Rap
+indie pop,Pop
+hip hop,Hip-Hop/Rap
+emo,Rock
+punk,Rock
+hip hop soul,Hip-Hop/Rap
+electro swing,Jazz/Blues
+jazz fusion,Jazz/Blues
+funk rock,Rock
+pop rock,Pop
+post punk,Rock
+pop punk,Rock
+garage rock,Rock
+emo pop,Pop
+indie pop,Pop
+britpop,Rock
+indie rock,Rock
+hard rock,Rock
+power metal,Rock
+progressive rock,Rock
+progressive metal,Rock
+heavy metal,Rock
+symphonic metal,Rock
+death metal,Rock
+black metal,Rock
+thrash metal,Rock
+speed metal,Rock
+folk metal,Rock
+doom metal,Rock
+glam metal,Rock
+gothic metal,Rock
+nu metal,Rock
+metalcore,Rock
+post metal,Rock
+math rock,Rock
+post rock,Rock
+noise rock,Rock
+experimental rock,Rock
+indie rock,Rock
+garage punk,Rock
+psychobilly,Rock
+hardcore punk,Rock
+crust punk,Rock
+thrash metal,Rock
+deathcore,Rock
+grindcore,Rock
+powerviolence,Rock
+metalcore,Rock
+post metal,Rock
+blackgaze,Rock
+djent,Rock
+mathcore,Rock
+ambient,Electronic/Dance
+chillout,Electronic/Dance
+downtempo,Electronic/Dance
+trip hop,Electronic/Dance
+future bass,Electronic/Dance
+trap,Electronic/Dance
+electro,Electronic/Dance
+house,Electronic/Dance
+techno,Electronic/Dance
+drum and bass,Electronic/Dance
+dubstep,Electronic/Dance
+electronica,Electronic/Dance
+idm,Electronic/Dance
+synthpop,Electronic/Dance
+electropop,Electronic/Dance
+electro house,Electronic/Dance
+progressive house,Electronic/Dance
+tech house,Electronic/Dance
+deep house,Electronic/Dance
+big beat,Electronic/Dance
+breakbeat,Electronic/Dance
+glitch,Electronic/Dance
+industrial,Rock
+ambient techno,Electronic/Dance
+acid house,Electronic/Dance
+acid jazz,Jazz/Blues
+jazz fusion,Jazz/Blues
+smooth jazz,Jazz/Blues
+swing,Jazz/Blues
+bebop,Jazz/Blues
+cool jazz,Jazz/Blues
+hard bop,Jazz/Blues
+free jazz,Jazz/Blues
+modal jazz,Jazz/Blues
+vocal jazz,Jazz/Blues
+contemporary jazz,Jazz/Blues
+traditional pop,Pop
+baroque,Classical
+classical,Classical
+early music,Classical
+medieval music,Classical
+renaissance music,Classical
+chamber music,Classical
+orchestral,Classical
+opera,Classical
+symphony,Classical
+ballet,Classical
+world,World/Other
+folk,World/Other
+traditional,World/Other
+ethnic,World/Other
+indigenous,World/Other
+afrobeat,World/Other
+reggae,World/Other
+latin,World/Other
+caribbean,World/Other
+blues,Jazz/Blues
+gospel,Jazz/Blues
+spirituals,Jazz/Blues
+country,World/Other
+bluegrass,World/Other
+americana,World/Other
+celtic,World/Other
+irish folk,World/Other
+balkan,World/Other
+turkish folk,World/Other
+brazilian,World/Other
+arabic,World/Other
+indian classical,Classical
+jazz, Jazz/Blues
+hip hop,Hip-Hop/Rap
+pop,Pop
+rock,Rock
+electronic,Electronic/Dance
+classical,Classical
+world music,World/Other
+
+
