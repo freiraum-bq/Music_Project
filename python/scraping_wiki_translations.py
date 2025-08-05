@@ -60,22 +60,31 @@ def main():
     results = []
     for _, row in df.iterrows():
         wiki_url = row.get('wiki_url', '')
+        name = row.get('common_name', 'Unknown')
+
+        # Skip if no valid wiki_url
         if not isinstance(wiki_url, str) or '/wiki/' not in wiki_url:
-            lang_count = None
-        else:
-            page_title = wiki_url.rsplit('/wiki/', 1)[-1]
-            try:
-                lang_count = count_langlinks(page_title)
-            except Exception as e:
-                print(f"Error fetching {page_title}: {e}")
-                lang_count = None
+            print(f"Skipping {name}: no valid wiki_url")
+            continue
+
+        # Extract page title
+        page_title = wiki_url.rsplit('/wiki/', 1)[-1]
+
+        # Fail-safe: skip on fetch/parsing errors
+        try:
+            lang_count = count_langlinks(page_title)
+        except Exception as e:
+            print(f"Skipping {name} ({page_title}): error fetching URL: {e}")
+            continue
+
+        # Append successful result
         results.append({
             'artist_id': row.get('artist_id'),
-            'common_name': row.get('common_name'),
+            'common_name': name,
             'wiki_url': wiki_url,
             'language_count': lang_count
         })
-        print(f"{row.get('common_name')}: {lang_count}")
+        print(f"{name}: {lang_count}")
 
     out_df = pd.DataFrame(results)
     csv_out = os.path.join(root, 'data', 'scraping', 'artist_lang_counts.csv')
