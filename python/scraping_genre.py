@@ -74,9 +74,9 @@ if __name__ == "__main__":
         })
 
     # 4) Save collected genres to CSV
-    out_dir = project_root / "data" / "scraping"
+    out_dir = project_root / "data" / "scraping" / "genre"
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / "artist_genres.csv"
+    out_path = out_dir / "artist_genres_raw.csv"
     # Save with full quoting to protect commas in fields
     pd.DataFrame(results).to_csv(
         out_path,
