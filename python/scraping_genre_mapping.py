@@ -112,7 +112,29 @@ if not any(m.get('main_genre', '').strip().lower() == 'electronic' for m in mapp
                     text = re.sub(r"\s*\([^)]*\)", "", text).strip()
                     if text:
                         mapping.append({"main_genre": "Electronic", "subgenre": text})
-
+# 3.6) HTML fallback for Hip hop if missing from wikitext
+if not any(m.get('main_genre', '').strip().lower() == 'hip hop' for m in mapping):
+    html = requests.get("https://en.wikipedia.org/wiki/List_of_music_genres_and_styles", timeout=10).text
+    soup = BeautifulSoup(html, "html.parser")
+    # Locate the HTML section for Hip hop
+    h3 = soup.find("h3", id="Hip_hop")
+    if h3:
+        container = h3.parent
+        # Find the first div.div-col sibling
+        div_col = container.find_next_sibling(lambda tag: tag.name == "div" and "div-col" in (tag.get("class") or []))
+        if div_col:
+            ul = div_col.find("ul")
+            if ul:
+                # Walk all list items (including nested) and extract the link or text
+                for li in ul.find_all("li"):
+                    # Prefer anchor text if present
+                    a = li.find("a")
+                    text = a.get_text().strip() if a else li.get_text().strip()
+                    # Remove any residual parenthetical content
+                    text = re.sub(r"\s*\([^)]*\)", "", text).strip()
+                    if text:
+                        mapping.append({"main_genre": "Hip hop", "subgenre": text})
+                        
 # 4) Convert to DataFrame, dedupe and clean
 df_mapping = pd.DataFrame(mapping).drop_duplicates().reset_index(drop=True)
 df_mapping['main_genre'] = (
