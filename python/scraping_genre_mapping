@@ -15,6 +15,24 @@ import re
 import pandas as pd
 import csv
 
+# Helper to ensure each main genre appears as its own subgenre entry unless already present
+def ensure_main_as_sub(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Append rows where main_genre == subgenre for any main_genre
+    not already present as a subgenre.
+    """
+    mains = set(df['main_genre'].dropna().astype(str).str.strip().str.lower())
+    subs  = set(df['subgenre'].dropna().astype(str).str.strip().str.lower())
+    to_add = [
+        {'main_genre': mg, 'subgenre': mg}
+        for mg in mains
+        if mg not in subs
+    ]
+    if to_add:
+        df = pd.concat([df, pd.DataFrame(to_add)], ignore_index=True)
+        df = df.drop_duplicates(subset=['main_genre','subgenre']).reset_index(drop=True)
+    return df
+
 # 1) Determine project root and output directory
 try:
     script_dir = Path(__file__).resolve().parent
@@ -103,6 +121,10 @@ df_mapping['main_genre'] = (
       .str.replace(r'\s*=+$', '', regex=True)   # remove trailing '=' characters
       .str.strip()                              # trim any leftover whitespace
 )
+
+
+# 4.5) Ensure each main genre appears as its own subgenre entry
+df_mapping = ensure_main_as_sub(df_mapping)
 
 # 5) Save mapping to CSV
 out_path = out_dir / "genre_mapping.csv"
