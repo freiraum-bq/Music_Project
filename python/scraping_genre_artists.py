@@ -1,3 +1,8 @@
+'''
+This script scrapes genres from Wikipedia artist pages (taken from wiki_url from neo4j_artists.cs
+and saves them to artist_genres_raw.csv under data/scraping/genre.
+'''
+
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd

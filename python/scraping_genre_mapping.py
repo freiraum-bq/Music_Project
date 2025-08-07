@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-scarping_genre_mapping.py
 
-Builds a mapping of main music genres to subgenres using the Wikipedia API
+This script builds a mapping of main music genres to subgenres using the Wikipedia API
 to fetch wikitext from the "List_of_music_genres_and_styles" page, then
-parses headings and list items to produce a CSV.
+parses headings and some manual adjustments are done to finally list items 
+& to produce genre_mapping.csv
+
 """
 
 import sys
@@ -112,6 +113,7 @@ if not any(m.get('main_genre', '').strip().lower() == 'electronic' for m in mapp
                     text = re.sub(r"\s*\([^)]*\)", "", text).strip()
                     if text:
                         mapping.append({"main_genre": "Electronic", "subgenre": text})
+
 # 3.6) HTML fallback for Hip hop if missing from wikitext
 if not any(m.get('main_genre', '').strip().lower() == 'hip hop' for m in mapping):
     html = requests.get("https://en.wikipedia.org/wiki/List_of_music_genres_and_styles", timeout=10).text
@@ -134,7 +136,7 @@ if not any(m.get('main_genre', '').strip().lower() == 'hip hop' for m in mapping
                     text = re.sub(r"\s*\([^)]*\)", "", text).strip()
                     if text:
                         mapping.append({"main_genre": "Hip hop", "subgenre": text})
-                        
+
 # 4) Convert to DataFrame, dedupe and clean
 df_mapping = pd.DataFrame(mapping).drop_duplicates().reset_index(drop=True)
 df_mapping['main_genre'] = (
@@ -144,11 +146,30 @@ df_mapping['main_genre'] = (
       .str.strip()                              # trim any leftover whitespace
 )
 
+# 5) Mapping some common main genres to more consistent names (merging similar genres)
+df_mapping.loc[df_mapping['main_genre'].str.lower() == 'blues', 'main_genre'] = 'Blues / Country'
+df_mapping.loc[df_mapping['main_genre'].str.lower() == 'traditional folk', 'main_genre'] = 'Folk'
+df_mapping.loc[df_mapping['main_genre'].str.lower() == 'religious', 'main_genre'] = 'Other'
 
-# 4.5) Ensure each main genre appears as its own subgenre entry
+
+# 6) Group regional main_genre values into a single "World" bucket
+world_set = {
+    "asian", "african", "antarctica", "australasia & oceania",
+    "european", "latin & south american", "north american"
+}
+
+# 8) Lowercase comparison for consistency
+lower_world_set = {g.lower() for g in world_set}
+df_mapping.loc[
+    df_mapping['main_genre'].str.lower().isin(lower_world_set),
+    'main_genre'
+] = 'World'
+
+
+# 9) Ensure each main genre appears as its own subgenre entry
 df_mapping = ensure_main_as_sub(df_mapping)
 
-# 5) Save mapping to CSV
+# 10) Save mapping to CSV
 out_path = out_dir / "genre_mapping.csv"
 df_mapping.to_csv(out_path, index=False, quoting=csv.QUOTE_ALL)
 print(f"Saved genre->subgenre mapping to {out_path}")
