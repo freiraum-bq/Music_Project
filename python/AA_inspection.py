@@ -219,5 +219,3 @@ print(
 # Most of the covers are also "released" in releases.csv,
 # but some covers seem just to be released as covers without a release entry.
 # ────────────────────────────────────────────────────────────────
-
-# %%
